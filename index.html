@@ -1,0 +1,1984 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sr. Matuto | O Melhor da Culinária Regional &amp; Pizzas em Caucaia - CE</title>
+    <meta name="description" content="Sr. Matuto Restaurante em Caucaia - CE. Culinária regional nordestina, feijão tropeiro, pizzas recheadas e mais de 47 opções no cardápio. Ambiente acolhedor. Peça pelo WhatsApp!">
+    <meta name="keywords" content="Sr Matuto, restaurante Caucaia, pizzaria Caucaia, feijão tropeiro, culinária regional, Nova Metrópole, pizza Caucaia CE">
+    <meta property="og:title" content="Sr. Matuto | Restaurante &amp; Pizzaria">
+    <meta property="og:description" content="O Melhor da Culinária Regional. Experiência, Sabor e Tradição em Nova Metrópole, Caucaia - CE.">
+    <meta property="og:type" content="restaurant">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* ============================================================
+           1. TOKENS & RESET
+           ============================================================ */
+        :root {
+            --bg:          #0b0a09;
+            --bg-elev:     #14120f;
+            --bg-card:     #1c1916;
+            --bg-card-2:   #231f1a;
+            --gold:        #c9a25a;
+            --gold-soft:   #e6c98a;
+            --gold-deep:   #9a7a3a;
+            --terracotta:  #b8503a;
+            --ember:       #e06a3a;
+            --cream:       #f5efe3;
+            --text:        #f5efe3;
+            --muted:       #a39a8e;
+            --muted-2:     #7a7166;
+            --whatsapp:    #25D366;
+            --whatsapp-h:  #20ba5a;
+            --border:      rgba(201,162,90,0.18);
+            --border-strong: rgba(201,162,90,0.35);
+            --shadow-soft: 0 20px 60px rgba(0,0,0,0.55);
+            --shadow-gold: 0 10px 40px rgba(201,162,90,0.25);
+            --radius-sm: 8px;
+            --radius-md: 14px;
+            --radius-lg: 22px;
+            --radius-xl: 32px;
+            --font-display: 'Playfair Display', serif;
+            --font-body:    'Inter', sans-serif;
+            --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+            --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+            --nav-h: 78px;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--font-body);
+            line-height: 1.65;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            text-rendering: optimizeLegibility;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: var(--font-display);
+            font-weight: 700;
+            line-height: 1.15;
+            letter-spacing: -0.01em;
+        }
+
+        a { color: inherit; text-decoration: none; }
+        ul { list-style: none; }
+        img { max-width: 100%; height: auto; display: block; }
+
+        .container {
+            width: 100%;
+            max-width: 1240px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .section { padding: 110px 0; position: relative; }
+        .section--alt { background: var(--bg-elev); }
+        .section--dark { background: var(--bg); }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 64px;
+            max-width: 760px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .section-title .eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--gold);
+            text-transform: uppercase;
+            font-family: var(--font-body);
+            font-size: 0.78rem;
+            font-weight: 600;
+            letter-spacing: 3px;
+            margin-bottom: 18px;
+        }
+        .section-title .eyebrow::before,
+        .section-title .eyebrow::after {
+            content: '';
+            width: 34px; height: 1px;
+            background: linear-gradient(90deg, transparent, var(--gold));
+        }
+        .section-title .eyebrow::after {
+            background: linear-gradient(90deg, var(--gold), transparent);
+        }
+        .section-title h2 {
+            font-size: clamp(2rem, 4vw, 3rem);
+            color: var(--cream);
+        }
+        .section-title h2 em {
+            font-style: italic;
+            color: var(--gold);
+            font-weight: 600;
+        }
+        .section-title p {
+            color: var(--muted);
+            margin-top: 18px;
+            font-size: 1.05rem;
+        }
+
+        /* ============================================================
+           2. BUTTONS
+           ============================================================ */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 15px 30px;
+            border-radius: 999px;
+            font-family: var(--font-body);
+            font-weight: 600;
+            font-size: 0.92rem;
+            letter-spacing: 0.4px;
+            cursor: pointer;
+            border: 1px solid transparent;
+            transition: all 0.35s var(--ease);
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .btn .fa, .btn i { font-size: 1rem; }
+        .btn-primary {
+            background: linear-gradient(135deg, var(--gold) 0%, var(--terracotta) 100%);
+            color: #1a1208;
+            box-shadow: 0 8px 28px rgba(184,80,58,0.35);
+        }
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 36px rgba(184,80,58,0.5);
+        }
+        .btn-gold {
+            background: linear-gradient(135deg, var(--gold-soft), var(--gold));
+            color: #1a1208;
+            box-shadow: var(--shadow-gold);
+        }
+        .btn-gold:hover { transform: translateY(-3px); box-shadow: 0 14px 44px rgba(201,162,90,0.45); }
+        .btn-whatsapp {
+            background: var(--whatsapp);
+            color: #fff;
+            box-shadow: 0 8px 24px rgba(37,211,102,0.3);
+        }
+        .btn-whatsapp:hover {
+            background: var(--whatsapp-h);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 32px rgba(37,211,102,0.45);
+        }
+        .btn-ghost {
+            background: transparent;
+            color: var(--cream);
+            border: 1px solid var(--border-strong);
+            backdrop-filter: blur(6px);
+        }
+        .btn-ghost:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+            transform: translateY(-3px);
+        }
+        .btn-block { width: 100%; }
+
+        /* ============================================================
+           3. NAVBAR
+           ============================================================ */
+        .navbar {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%;
+            z-index: 1000;
+            height: var(--nav-h);
+            display: flex;
+            align-items: center;
+            background: rgba(11,10,9,0.55);
+            backdrop-filter: blur(14px) saturate(140%);
+            -webkit-backdrop-filter: blur(14px) saturate(140%);
+            border-bottom: 1px solid transparent;
+            transition: all 0.4s var(--ease);
+        }
+        .navbar.scrolled {
+            background: rgba(11,10,9,0.92);
+            border-bottom-color: var(--border);
+            height: 66px;
+        }
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 24px;
+        }
+        .logo {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--cream);
+            letter-spacing: 0.5px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo .mark {
+            width: 34px; height: 34px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--gold), var(--terracotta));
+            display: grid; place-items: center;
+            color: #1a1208;
+            font-size: 0.95rem;
+            font-weight: 800;
+            box-shadow: 0 0 0 3px rgba(201,162,90,0.15);
+        }
+        .logo span { color: var(--gold); font-style: italic; }
+
+        .nav-links {
+            display: flex;
+            gap: 6px;
+            align-items: center;
+        }
+        .nav-links a {
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--cream);
+            padding: 9px 14px;
+            border-radius: 999px;
+            transition: all 0.3s var(--ease);
+            position: relative;
+        }
+        .nav-links a:hover { color: var(--gold); background: rgba(201,162,90,0.08); }
+        .nav-links .cta-nav {
+            background: var(--whatsapp);
+            color: #fff;
+            padding: 9px 18px;
+        }
+        .nav-links .cta-nav:hover { background: var(--whatsapp-h); color: #fff; }
+
+        .mobile-toggle {
+            display: none;
+            width: 42px; height: 42px;
+            border-radius: 50%;
+            border: 1px solid var(--border-strong);
+            background: rgba(28,25,22,0.6);
+            color: var(--cream);
+            font-size: 1.1rem;
+            cursor: pointer;
+            place-items: center;
+            transition: all 0.3s var(--ease);
+        }
+        .mobile-toggle:hover { border-color: var(--gold); color: var(--gold); }
+
+        /* ============================================================
+           4. HERO
+           ============================================================ */
+        .hero {
+            min-height: 100vh;
+            padding: calc(var(--nav-h) + 40px) 0 80px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+        .hero-bg {
+            position: absolute; inset: 0;
+            background:
+                radial-gradient(ellipse 80% 60% at 75% 20%, rgba(201,162,90,0.18) 0%, transparent 60%),
+                radial-gradient(ellipse 60% 50% at 15% 80%, rgba(184,80,58,0.12) 0%, transparent 60%),
+                linear-gradient(180deg, #15120f 0%, #0b0a09 100%);
+            z-index: 0;
+        }
+        .hero-grid-texture {
+            position: absolute; inset: 0;
+            background-image:
+                linear-gradient(rgba(201,162,90,0.04) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(201,162,90,0.04) 1px, transparent 1px);
+            background-size: 64px 64px;
+            mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black, transparent);
+            -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black, transparent);
+            z-index: 0;
+        }
+        .hero .container {
+            position: relative; z-index: 2;
+            display: grid;
+            grid-template-columns: 1.05fr 0.95fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .hero-content { position: relative; }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 16px 8px 8px;
+            border-radius: 999px;
+            background: rgba(201,162,90,0.08);
+            border: 1px solid var(--border);
+            font-size: 0.82rem;
+            color: var(--gold-soft);
+            margin-bottom: 28px;
+        }
+        .hero-badge .dot {
+            width: 8px; height: 8px;
+            border-radius: 50%;
+            background: var(--gold);
+            box-shadow: 0 0 0 4px rgba(201,162,90,0.2);
+            animation: pulseDot 2s infinite;
+        }
+        @keyframes pulseDot {
+            0% { box-shadow: 0 0 0 0 rgba(201,162,90,0.4); }
+            70% { box-shadow: 0 0 0 10px rgba(201,162,90,0); }
+            100% { box-shadow: 0 0 0 0 rgba(201,162,90,0); }
+        }
+
+        .hero h1 {
+            font-size: clamp(2.6rem, 5.6vw, 4.6rem);
+            color: var(--cream);
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+        }
+        .hero h1 .line { display: block; }
+        .hero h1 .accent {
+            font-style: italic;
+            background: linear-gradient(120deg, var(--gold-soft) 0%, var(--gold) 40%, var(--terracotta) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero p {
+            color: var(--muted);
+            font-size: 1.12rem;
+            max-width: 560px;
+            margin-bottom: 36px;
+        }
+        .hero-actions {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+        .hero-stats {
+            display: flex;
+            gap: 32px;
+            padding-top: 28px;
+            border-top: 1px solid var(--border);
+            flex-wrap: wrap;
+        }
+        .hero-stat { display: flex; flex-direction: column; }
+        .hero-stat .num {
+            font-family: var(--font-display);
+            font-size: 1.9rem;
+            font-weight: 700;
+            color: var(--gold);
+            line-height: 1;
+        }
+        .hero-stat .label {
+            font-size: 0.78rem;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-top: 6px;
+        }
+        .stars { color: var(--gold-soft); letter-spacing: 1px; }
+
+        .hero-visual {
+            position: relative;
+        }
+        .hero-main-img {
+            position: relative;
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            transform: rotate(-1.5deg);
+            transition: transform 0.6s var(--ease-out);
+            border: 1px solid var(--border-strong);
+        }
+        .hero-main-img:hover { transform: rotate(0deg) scale(1.02); }
+        .hero-main-img img {
+            width: 100%;
+            height: 520px;
+            object-fit: cover;
+            display: block;
+        }
+        .hero-main-img::after {
+            content: '';
+            position: absolute; inset: 0;
+            background: linear-gradient(180deg, transparent 55%, rgba(11,10,9,0.55) 100%);
+            pointer-events: none;
+        }
+        .hero-float-card {
+            position: absolute;
+            bottom: -22px; left: -26px;
+            background: rgba(28,25,22,0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border-strong);
+            border-radius: var(--radius-md);
+            padding: 16px 20px;
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            box-shadow: var(--shadow-soft);
+            animation: floatCard 6s ease-in-out infinite;
+        }
+        @keyframes floatCard {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+        .hero-float-card .ic {
+            width: 44px; height: 44px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--gold), var(--terracotta));
+            display: grid; place-items: center;
+            color: #1a1208;
+            font-size: 1.2rem;
+        }
+        .hero-float-card strong { display: block; color: var(--cream); font-size: 0.95rem; }
+        .hero-float-card span { color: var(--muted); font-size: 0.8rem; }
+
+        .hero-stamp {
+            position: absolute;
+            top: -18px; right: -18px;
+            width: 96px; height: 96px;
+            border-radius: 50%;
+            background: conic-gradient(from 0deg, var(--gold), var(--terracotta), var(--gold));
+            display: grid; place-items: center;
+            color: #1a1208;
+            font-family: var(--font-display);
+            font-weight: 800;
+            font-size: 0.72rem;
+            text-align: center;
+            line-height: 1.1;
+            box-shadow: 0 8px 24px rgba(201,162,90,0.4);
+            animation: spinSlow 18s linear infinite;
+            letter-spacing: 0.5px;
+        }
+        @keyframes spinSlow { to { transform: rotate(360deg); } }
+
+        /* ============================================================
+           5. REVEAL ANIMATIONS
+           ============================================================ */
+        .reveal {
+            opacity: 0;
+            transform: translateY(32px);
+            transition: opacity 0.9s var(--ease-out), transform 0.9s var(--ease-out);
+        }
+        .reveal.in { opacity: 1; transform: translateY(0); }
+        .reveal-delay-1 { transition-delay: 0.1s; }
+        .reveal-delay-2 { transition-delay: 0.2s; }
+        .reveal-delay-3 { transition-delay: 0.3s; }
+        .reveal-delay-4 { transition-delay: 0.4s; }
+
+        /* ============================================================
+           6. FEATURES
+           ============================================================ */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+        .feature-card {
+            background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg) 100%);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 34px 28px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s var(--ease);
+        }
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+            opacity: 0;
+            transition: opacity 0.4s var(--ease);
+        }
+        .feature-card:hover {
+            transform: translateY(-6px);
+            border-color: var(--border-strong);
+            box-shadow: var(--shadow-gold);
+        }
+        .feature-card:hover::before { opacity: 1; }
+        .feature-icon {
+            width: 56px; height: 56px;
+            border-radius: 16px;
+            background: rgba(201,162,90,0.1);
+            border: 1px solid var(--border);
+            display: grid; place-items: center;
+            font-size: 1.7rem;
+            margin-bottom: 22px;
+            transition: all 0.4s var(--ease);
+        }
+        .feature-card:hover .feature-icon {
+            background: linear-gradient(135deg, var(--gold), var(--terracotta));
+            transform: rotate(-6deg) scale(1.08);
+        }
+        .feature-card h3 {
+            font-family: var(--font-display);
+            font-size: 1.35rem;
+            color: var(--cream);
+            margin-bottom: 10px;
+        }
+        .feature-card p { color: var(--muted); font-size: 0.93rem; }
+
+        /* ============================================================
+           7. DESTAQUES (HIGHLIGHTS)
+           ============================================================ */
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+        }
+        .highlight-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.45s var(--ease);
+            position: relative;
+        }
+        .highlight-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--gold);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        }
+        .highlight-img-wrap {
+            position: relative;
+            height: 230px;
+            overflow: hidden;
+        }
+        .highlight-img-wrap img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+            transition: transform 0.7s var(--ease-out);
+        }
+        .highlight-card:hover .highlight-img-wrap img { transform: scale(1.1); }
+        .highlight-img-wrap::after {
+            content: '';
+            position: absolute; inset: 0;
+            background: linear-gradient(180deg, transparent 50%, rgba(11,10,9,0.7) 100%);
+        }
+        .highlight-tag {
+            position: absolute;
+            top: 16px; left: 16px;
+            z-index: 2;
+            background: rgba(11,10,9,0.7);
+            backdrop-filter: blur(8px);
+            border: 1px solid var(--border-strong);
+            color: var(--gold-soft);
+            font-size: 0.72rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding: 6px 12px;
+            border-radius: 999px;
+        }
+        .highlight-info {
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        .highlight-info h3 {
+            font-family: var(--font-display);
+            font-size: 1.4rem;
+            color: var(--cream);
+            margin-bottom: 8px;
+        }
+        .highlight-info p { color: var(--muted); font-size: 0.9rem; margin-bottom: 20px; flex-grow: 1; }
+        .highlight-price {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--gold);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 18px;
+        }
+
+        /* ============================================================
+           8. MENU (CARDÁPIO)
+           ============================================================ */
+        .menu-sticky {
+            position: sticky;
+            top: calc(var(--nav-h) - 10px);
+            z-index: 50;
+            background: rgba(11,10,9,0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border);
+            border-radius: 999px;
+            padding: 6px;
+            display: flex;
+            gap: 4px;
+            overflow-x: auto;
+            margin: 0 auto 48px;
+            max-width: 100%;
+            scrollbar-width: none;
+        }
+        .menu-sticky::-webkit-scrollbar { display: none; }
+        .menu-pill {
+            flex: 0 0 auto;
+            padding: 10px 18px;
+            border-radius: 999px;
+            font-size: 0.82rem;
+            font-weight: 500;
+            color: var(--muted);
+            cursor: pointer;
+            transition: all 0.3s var(--ease);
+            white-space: nowrap;
+            display: inline-flex; align-items: center; gap: 8px;
+        }
+        .menu-pill:hover { color: var(--cream); background: rgba(201,162,90,0.08); }
+        .menu-pill.active {
+            background: linear-gradient(135deg, var(--gold), var(--terracotta));
+            color: #1a1208;
+            font-weight: 600;
+        }
+
+        .menu-category {
+            margin-bottom: 56px;
+            scroll-margin-top: 120px;
+        }
+        .category-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 28px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--border);
+        }
+        .category-header .cat-icon {
+            width: 46px; height: 46px;
+            border-radius: 12px;
+            background: rgba(201,162,90,0.1);
+            border: 1px solid var(--border);
+            display: grid; place-items: center;
+            font-size: 1.3rem;
+        }
+        .category-header h3 {
+            font-family: var(--font-display);
+            font-size: 1.6rem;
+            color: var(--cream);
+        }
+        .category-header .cat-desc {
+            color: var(--muted);
+            font-size: 0.85rem;
+            margin-top: 2px;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+        }
+        .menu-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-md);
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 16px;
+            transition: all 0.3s var(--ease);
+            position: relative;
+            overflow: hidden;
+        }
+        .menu-item::before {
+            content: '';
+            position: absolute;
+            left: 0; top: 0; bottom: 0;
+            width: 2px;
+            background: linear-gradient(180deg, var(--gold), var(--terracotta));
+            transform: scaleY(0);
+            transform-origin: top;
+            transition: transform 0.35s var(--ease);
+        }
+        .menu-item:hover {
+            background: var(--bg-card-2);
+            border-color: var(--border-strong);
+            transform: translateX(4px);
+        }
+        .menu-item:hover::before { transform: scaleY(1); }
+        .menu-item-details h4 {
+            font-family: var(--font-display);
+            font-size: 1.1rem;
+            color: var(--cream);
+            margin-bottom: 6px;
+        }
+        .menu-item-details p { color: var(--muted); font-size: 0.84rem; line-height: 1.5; }
+        .menu-item-price {
+            font-family: var(--font-display);
+            font-weight: 700;
+            color: var(--gold);
+            font-size: 1.15rem;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+        .menu-item-price .from {
+            display: block;
+            font-family: var(--font-body);
+            font-size: 0.68rem;
+            color: var(--muted-2);
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-align: right;
+            margin-bottom: 2px;
+        }
+        .badge {
+            display: inline-block;
+            background: rgba(201,162,90,0.1);
+            color: var(--gold-soft);
+            font-size: 0.68rem;
+            padding: 3px 8px;
+            border-radius: 4px;
+            border: 1px dashed var(--border-strong);
+            font-style: italic;
+        }
+
+        .menu-cta-box {
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(135deg, rgba(201,162,90,0.08), rgba(184,80,58,0.08));
+            border: 1px solid var(--border-strong);
+            border-radius: var(--radius-lg);
+            margin-top: 20px;
+        }
+        .menu-cta-box h3 { font-family: var(--font-display); color: var(--cream); font-size: 1.5rem; margin-bottom: 8px; }
+        .menu-cta-box p { color: var(--muted); margin-bottom: 20px; }
+
+        /* ============================================================
+           9. PROMOS
+           ============================================================ */
+        .promos-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+        .promo-card {
+            background: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-elev) 100%);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 30px 26px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.4s var(--ease);
+        }
+        .promo-card::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 100% 0%, rgba(201,162,90,0.15), transparent 60%);
+            pointer-events: none;
+        }
+        .promo-card:hover { transform: translateY(-6px); border-color: var(--gold); }
+        .promo-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--ember), var(--terracotta));
+            color: #fff;
+            font-size: 0.72rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            padding: 6px 14px;
+            border-radius: 999px;
+            margin-bottom: 18px;
+        }
+        .promo-card h3 { font-family: var(--font-display); font-size: 1.5rem; color: var(--cream); margin-bottom: 10px; }
+        .promo-card p { color: var(--muted); font-size: 0.92rem; margin-bottom: 18px; }
+        .promo-price {
+            font-family: var(--font-display);
+            font-size: 2.4rem;
+            font-weight: 800;
+            color: var(--gold);
+            line-height: 1;
+        }
+        .promo-price small { font-size: 0.9rem; color: var(--muted); font-family: var(--font-body); font-weight: 400; }
+
+        /* ============================================================
+           10. GALLERY
+           ============================================================ */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-auto-rows: 220px;
+            gap: 14px;
+        }
+        .gallery-item {
+            position: relative;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            border: 1px solid var(--border);
+            cursor: pointer;
+        }
+        .gallery-item img {
+            width: 100%; height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s var(--ease-out);
+        }
+        .gallery-item:hover img { transform: scale(1.12); }
+        .gallery-item::after {
+            content: '';
+            position: absolute; inset: 0;
+            background: linear-gradient(180deg, transparent 40%, rgba(11,10,9,0.7) 100%);
+            opacity: 0;
+            transition: opacity 0.3s var(--ease);
+        }
+        .gallery-item:hover::after { opacity: 1; }
+        .gallery-item .cap {
+            position: absolute;
+            bottom: 14px; left: 14px; right: 14px;
+            color: var(--cream);
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            z-index: 2;
+            opacity: 0;
+            transform: translateY(8px);
+            transition: all 0.3s var(--ease);
+        }
+        .gallery-item:hover .cap { opacity: 1; transform: translateY(0); }
+        .gallery-item.tall { grid-row: span 2; }
+        .gallery-item.wide { grid-column: span 2; }
+
+        /* ============================================================
+           11. REVIEWS
+           ============================================================ */
+        .reviews-top {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 40px;
+            align-items: center;
+            margin-bottom: 48px;
+            padding: 32px 40px;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+        }
+        .score-block { text-align: center; }
+        .score-num {
+            font-family: var(--font-display);
+            font-size: 4rem;
+            font-weight: 800;
+            color: var(--gold);
+            line-height: 1;
+        }
+        .score-stars { color: var(--gold-soft); font-size: 1.4rem; letter-spacing: 2px; margin: 8px 0; }
+        .score-count { color: var(--muted); font-size: 0.85rem; }
+        .reviews-bars { display: flex; flex-direction: column; gap: 8px; }
+        .bar-row { display: flex; align-items: center; gap: 12px; font-size: 0.8rem; color: var(--muted); }
+        .bar-row .bar { flex: 1; height: 8px; background: rgba(255,255,255,0.06); border-radius: 999px; overflow: hidden; }
+        .bar-row .bar > span { display: block; height: 100%; background: linear-gradient(90deg, var(--gold), var(--terracotta)); border-radius: 999px; }
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+        .review-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 28px;
+            transition: all 0.4s var(--ease);
+        }
+        .review-card:hover { border-color: var(--border-strong); transform: translateY(-4px); }
+        .review-head {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 16px;
+        }
+        .avatar {
+            width: 46px; height: 46px;
+            border-radius: 50%;
+            display: grid; place-items: center;
+            font-family: var(--font-display);
+            font-weight: 700;
+            color: #1a1208;
+            background: linear-gradient(135deg, var(--gold-soft), var(--gold));
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+        .review-head strong { display: block; color: var(--cream); font-size: 0.95rem; }
+        .review-head span { color: var(--muted-2); font-size: 0.78rem; }
+        .review-stars { color: var(--gold-soft); font-size: 0.85rem; margin-bottom: 12px; letter-spacing: 1px; }
+        .review-text { color: var(--muted); font-size: 0.92rem; font-style: italic; line-height: 1.6; }
+        .review-text::before { content: '\201C'; color: var(--gold); font-size: 1.6rem; font-family: var(--font-display); vertical-align: -6px; margin-right: 4px; }
+
+        /* ============================================================
+           12. LOCALIZAÇÃO
+           ============================================================ */
+        .location-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: stretch;
+        }
+        .location-info { padding: 8px 0; }
+        .location-info h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); color: var(--cream); margin-bottom: 16px; }
+        .location-info p { color: var(--muted); margin-bottom: 30px; }
+        .info-list { display: flex; flex-direction: column; gap: 18px; margin-bottom: 32px; }
+        .info-item { display: flex; align-items: flex-start; gap: 16px; }
+        .info-item .ic {
+            width: 44px; height: 44px;
+            border-radius: 12px;
+            background: rgba(201,162,90,0.1);
+            border: 1px solid var(--border);
+            display: grid; place-items: center;
+            color: var(--gold);
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+        .info-item strong { display: block; color: var(--cream); font-size: 0.95rem; margin-bottom: 2px; }
+        .info-item span, .info-item a { color: var(--muted); font-size: 0.9rem; }
+        .info-item a:hover { color: var(--gold); }
+        .hours-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px 18px;
+            margin-top: 6px;
+        }
+        .hours-grid .day { color: var(--muted); font-size: 0.85rem; }
+        .hours-grid .time { color: var(--cream); font-size: 0.85rem; font-weight: 600; text-align: right; }
+        .hours-grid .closed { color: var(--terracotta); font-weight: 600; }
+
+        .map-container {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            border: 1px solid var(--border);
+            min-height: 420px;
+            position: relative;
+            background: var(--bg-card);
+        }
+        .map-container iframe { width: 100%; height: 100%; min-height: 420px; border: 0; filter: grayscale(0.4) contrast(1.05) brightness(0.9); }
+        .map-badge {
+            position: absolute;
+            top: 16px; left: 16px;
+            z-index: 2;
+            background: rgba(11,10,9,0.85);
+            backdrop-filter: blur(10px);
+            border: 1px solid var(--border-strong);
+            color: var(--cream);
+            padding: 10px 16px;
+            border-radius: var(--radius-md);
+            font-size: 0.82rem;
+            display: flex; align-items: center; gap: 10px;
+        }
+        .map-badge i { color: var(--gold); }
+
+        /* ============================================================
+           13. RESERVATION FORM
+           ============================================================ */
+        .reserve {
+            background: linear-gradient(135deg, var(--bg-elev), var(--bg));
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+        .reserve-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.1fr;
+            gap: 40px;
+            align-items: center;
+        }
+        .reserve-info h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); color: var(--cream); margin-bottom: 14px; }
+        .reserve-info p { color: var(--muted); margin-bottom: 24px; }
+        .reserve-form {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 36px 32px;
+            box-shadow: var(--shadow-soft);
+        }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+        .form-group { margin-bottom: 16px; }
+        .form-group label {
+            display: block;
+            color: var(--muted);
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            color: var(--cream);
+            padding: 13px 16px;
+            font-family: var(--font-body);
+            font-size: 0.92rem;
+            transition: all 0.3s var(--ease);
+        }
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--gold);
+            box-shadow: 0 0 0 3px rgba(201,162,90,0.12);
+        }
+        .form-group textarea { resize: vertical; min-height: 80px; }
+
+        /* ============================================================
+           14. FOOTER
+           ============================================================ */
+        footer {
+            background: #070605;
+            border-top: 1px solid var(--border);
+            padding: 60px 0 24px;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1.3fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        .footer-brand .logo-foot {
+            font-family: var(--font-display);
+            font-size: 1.6rem;
+            color: var(--cream);
+            margin-bottom: 14px;
+        }
+        .footer-brand .logo-foot span { color: var(--gold); font-style: italic; }
+        .footer-brand p { color: var(--muted); font-size: 0.9rem; max-width: 300px; }
+        .footer-col h4 {
+            color: var(--gold);
+            font-family: var(--font-body);
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 18px;
+            font-weight: 700;
+        }
+        .footer-col ul { display: flex; flex-direction: column; gap: 10px; }
+        .footer-col ul a { color: var(--muted); font-size: 0.88rem; transition: color 0.3s; }
+        .footer-col ul a:hover { color: var(--gold); }
+        .footer-social {
+            display: flex; gap: 10px; margin-top: 18px;
+        }
+        .social-btn {
+            width: 40px; height: 40px;
+            border-radius: 50%;
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            display: grid; place-items: center;
+            color: var(--muted);
+            font-size: 1rem;
+            transition: all 0.3s var(--ease);
+        }
+        .social-btn:hover { background: var(--gold); color: #1a1208; border-color: var(--gold); transform: translateY(-3px); }
+        .footer-bottom {
+            border-top: 1px solid var(--border);
+            padding-top: 22px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            color: var(--muted-2);
+            font-size: 0.82rem;
+        }
+
+        /* ============================================================
+           15. WHATSAPP FLOAT
+           ============================================================ */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 28px; right: 28px;
+            width: 60px; height: 60px;
+            background: var(--whatsapp);
+            color: #fff;
+            border-radius: 50%;
+            display: grid; place-items: center;
+            font-size: 28px;
+            box-shadow: 0 8px 30px rgba(37,211,102,0.4);
+            z-index: 9999;
+            transition: all 0.3s var(--ease);
+            animation: waPulse 2.2s infinite;
+        }
+        .whatsapp-float:hover { transform: scale(1.1) rotate(-6deg); background: var(--whatsapp-h); }
+        @keyframes waPulse {
+            0% { box-shadow: 0 0 0 0 rgba(37,211,102,0.5); }
+            70% { box-shadow: 0 0 0 18px rgba(37,211,102,0); }
+            100% { box-shadow: 0 0 0 0 rgba(37,211,102,0); }
+        }
+
+        /* ============================================================
+           16. RESPONSIVE
+           ============================================================ */
+        @media (max-width: 1024px) {
+            .features-grid,
+            .highlights-grid,
+            .promos-grid,
+            .reviews-grid { grid-template-columns: repeat(2, 1fr); }
+            .gallery-grid { grid-template-columns: repeat(3, 1fr); }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+            .reserve-grid { grid-template-columns: 1fr; }
+            .hero .container { grid-template-columns: 1fr; gap: 40px; text-align: center; }
+            .hero p { margin: 0 auto 36px; }
+            .hero-actions { justify-content: center; }
+            .hero-stats { justify-content: center; }
+            .hero-visual { max-width: 520px; margin: 0 auto; }
+            .location-grid { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 768px) {
+            .section { padding: 72px 0; }
+            .navbar { height: 66px; }
+            .nav-links {
+                position: fixed;
+                top: 66px; left: -100%;
+                width: 100%;
+                height: calc(100vh - 66px);
+                background: rgba(11,10,9,0.98);
+                backdrop-filter: blur(18px);
+                flex-direction: column;
+                justify-content: center;
+                gap: 8px;
+                transition: left 0.4s var(--ease);
+                border-top: 1px solid var(--border);
+            }
+            .nav-links.active { left: 0; }
+            .nav-links a { font-size: 1.1rem; padding: 14px 24px; }
+            .mobile-toggle { display: grid; }
+            .features-grid,
+            .highlights-grid,
+            .promos-grid,
+            .reviews-grid,
+            .gallery-grid,
+            .menu-grid,
+            .footer-grid { grid-template-columns: 1fr; }
+            .gallery-grid { grid-auto-rows: 200px; }
+            .gallery-item.wide, .gallery-item.tall { grid-column: auto; grid-row: auto; }
+            .reviews-top { grid-template-columns: 1fr; text-align: center; padding: 24px; }
+            .form-row { grid-template-columns: 1fr; }
+            .hero-main-img img { height: 380px; }
+            .whatsapp-float { width: 52px; height: 52px; bottom: 20px; right: 20px; }
+            .footer-bottom { flex-direction: column; text-align: center; }
+            .menu-sticky { border-radius: 16px; }
+        }
+        @media (max-width: 480px) {
+            .container { padding: 0 18px; }
+            .hero h1 { font-size: 2.3rem; }
+            .btn { padding: 13px 22px; font-size: 0.85rem; }
+            .hero-stats { gap: 18px; }
+        }
+
+        /* small helpers */
+        .text-gold { color: var(--gold); }
+        .order-wa { color: var(--whatsapp); }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#inicio" class="logo">
+                <span class="mark">M</span>
+                Sr. <span>Matuto</span>
+            </a>
+            <button class="mobile-toggle" id="mobile-toggle" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#destaques">Destaques</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#avaliacoes">Avaliações</a></li>
+                <li><a href="#localizacao">Contato</a></li>
+                <li><a href="https://wa.me/5585988681757?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido%20no%20Sr.%20Matuto." target="_blank" class="cta-nav"><i class="fab fa-whatsapp"></i> Pedir agora</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+        <div class="hero-bg"></div>
+        <div class="hero-grid-texture"></div>
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge reveal">
+                    <span class="dot"></span>
+                    Aberto hoje · Seg a Sex 17h–00h
+                </span>
+                <h1 class="reveal reveal-delay-1">
+                    <span class="line">O melhor da</span>
+                    <span class="line accent">culinária regional,</span>
+                    <span class="line">feito com tradição.</span>
+                </h1>
+                <p class="reveal reveal-delay-2">
+                    No Sr. Matuto, cada prato e cada pizza carrega o sabor do Nordeste: feijão tropeiro, carne do sol, pizzas recheadas e mais de 47 opções para você escolher. Ambiente acolhedor, preço justo e atendimento de coração.
+                </p>
+                <div class="hero-actions reveal reveal-delay-3">
+                    <a href="#cardapio" class="btn btn-gold"><i class="fas fa-utensils"></i> Ver cardápio</a>
+                    <a href="https://wa.me/5585988681757?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20quero%20fazer%20um%20pedido." target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Pedir pelo WhatsApp</a>
+                </div>
+                <div class="hero-stats reveal reveal-delay-4">
+                    <div class="hero-stat">
+                        <span class="num">4.4 <span class="stars">★</span></span>
+                        <span class="label">583 avaliações</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="num">47+</span>
+                        <span class="label">Opções de pizza</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="num">R$ 40–120</span>
+                        <span class="label">Por pessoa</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual reveal reveal-delay-2">
+                <div class="hero-main-img">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=900&q=80" alt="Pizza artesanal recheada do Sr. Matuto">
+                </div>
+                <div class="hero-float-card">
+                    <div class="ic"><i class="fas fa-fire"></i></div>
+                    <div>
+                        <strong>Feijão Tropeiro</strong>
+                        <span>Campeão de pedidos</span>
+                    </div>
+                </div>
+                <div class="hero-stamp">
+                    DESDE<br>2020<br>★ NOVA<br>METRÓPOLE
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SOBRE / FEATURES -->
+    <section class="section section--alt" id="sobre">
+        <div class="container">
+            <div class="section-title reveal">
+                <span class="eyebrow">Experiência completa</span>
+                <h2>Por que <em>conhecer</em> o Sr. Matuto?</h2>
+                <p>Somos apaixonados pelo o que servimos. Aqui, o sabor da culinária nordestina encontra a pizza italiana no jeitinho que só o Matuto sabe fazer.</p>
+            </div>
+            <div class="features-grid">
+                <article class="feature-card reveal">
+                    <div class="feature-icon"> 🍳 </div>
+                    <h3>Culinária regional</h3>
+                    <p>Feijão tropeiro, feijão verde, baião, carne do sol, costela e pratos típicos do Nordeste preparados com receitas da casa.</p>
+                </article>
+                <article class="feature-card reveal reveal-delay-1">
+                    <div class="feature-icon">🍕</div>
+                    <h3>+47 pizzas</h3>
+                    <p>Linha tradicional, premium, Sr. Matuto, pizzas doces e calzones. Tudo em massa afinada, muuuito recheada e de excelente qualidade.</p>
+                </article>
+                <article class="feature-card reveal reveal-delay-2">
+                    <div class="feature-icon">🔥</div>
+                    <h3>Forno &amp; brasa</h3>
+                    <p>Pizzas no forno, espetinhos e carnes suculentas. Sabor que aquece o coração e reúne a família em volta da mesa.</p>
+                </article>
+                <article class="feature-card reveal reveal-delay-3">
+                    <div class="feature-icon">🏠</div>
+                    <h3>Ambiente acolhedor</h3>
+                    <p>Espaço arejado e aconchegante, ideal para reunir amigos, casais e famílias. Banheiros limpos e estacionamento.</p>
+                </article>
+                <article class="feature-card reveal">
+                    <div class="feature-icon">💰</div>
+                    <h3>Preço justo</h3>
+                    <p>R$ 40 a R$ 120 por pessoa. Pizza de calabresa a partir de R$ 25 e combos que cabem no seu bolso.</p>
+                </article>
+                <article class="feature-card reveal reveal-delay-1">
+                    <div class="feature-icon">ていた </div>
+                    <h3>Entrega sem contato</h3>
+                    <p>Refeição no local, para viagem ou entrega. Peça pelo WhatsApp e receba no conforto da sua casa.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- DESTAQUES -->
+    <section class="section" id="destaques">
+        <div class="container">
+            <div class="section-title reveal">
+                <span class="eyebrow">Mais pedidos</span>
+                <h2>Destaques do <em>cardápio</em></h2>
+                <p>Os pratos que conquistaram o paladar de Caucaia. Pede aí e confere.</p>
+            </div>
+            <div class="highlights-grid">
+                <article class="highlight-card reveal">
+                    <div class="highlight-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=700&q=80" alt="Feijão Tropeiro do Sr. Matuto">
+                        <span class="highlight-tag">Campeão</span>
+                    </div>
+                    <div class="highlight-info">
+                        <h3>Feijão Tropeiro</h3>
+                        <p>Nosso clássico: feijão, farinha, linguiça, bacon e temperos da casa. Muito elogiado pelos frequentadores.</p>
+                        <span class="highlight-price"><i class="fas fa-tag"></i> R$ 27–45</span>
+                        <a href="https://wa.me/5585988681757?text=Ol%C3%A1!%20Quero%20pedir%20o%20Feij%C3%A3o%20Tropeiro." target="_blank" class="btn btn-whatsapp btn-block"><i class="fab fa-whatsapp"></i> Pedir agora</a>
+                    </div>
+                </article>
+                <article class="highlight-card reveal reveal-delay-1">
+                    <div class="highlight-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=700&q=80" alt="Pizza Sr. Matuto">
+                        <span class="highlight-tag">Pizza</span>
+                    </div>
+                    <div class="highlight-info">
+                        <h3>Pizza Sr. Matuto</h3>
+                        <p>Massa afinada e muito recheio. Linha premium e exclusivos da casa com ingredientes selecionados.</p>
+                        <span class="highlight-price"><i class="fas fa-tag"></i> a partir de R$ 40</span>
+                        <a href="https://wa.me/5585988681757?text=Ol%C3%A1!%20Quero%20pedir%20a%20Pizza%20Sr.%20Matuto." target="_blank" class="btn btn-whatsapp btn-block"><i class="fab fa-whatsapp"></i> Pedir agora</a>
+                    </div>
+                </article>
+                <article class="highlight-card reveal reveal-delay-2">
+                    <div class="highlight-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=700&q=80" alt="Camarão do Sr. Matuto">
+                        <span class="highlight-tag">Premium</span>
+                    </div>
+                    <div class="highlight-info">
+                        <h3>Feijão Verde da Casa</h3>
+                        <p>Feijão verde cremoso acompanhado de arroz, carne do sol/baião e farofa crocante. Prato típico cearense.</p>
+                        <span class="highlight-price"><i class="fas fa-tag"></i> R$ 27</span>
+                        <a href="https://wa.me/5585988681757?text=Ol%C3%A1!%20Quero%20pedir%20o%20Feij%C3%A3o%20Verde%20da%20Casa." target="_blank" class="btn btn-whatsapp btn-block"><i class="fab fa-whatsapp"></i> Pedir agora</a>
+                    </div>
+                </article>
+                <article class="highlight-card reveal">
+                    <div class="highlight-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=80" alt="Carne do sol acebolada">
+                        <span class="highlight-tag">Tradição</span>
+                    </div>
+                    <div class="highlight-info">
+                        <h3>Carne do Sol Acebolada</h3>
+                        <p>Carne do sol macia e suculenta, acebolada no capricho, servida com baião e farofa de manteiga.</p>
+                        <span class="highlight-price"><i class="fas fa-tag"></i> R$ 35–55</span>
+                        <a href="https://wa.me/5585988681757?text=Ol%C3%A1!%20Quero%20pedir%20Carne%20do%20Sol%20Acebolada." target="_blank" class="btn btn-whatsapp btn-block"><i class="fab fa-whatsapp"></i> Pedir agora</a>
+                    </div>
+                </article>
+                <article class="highlight-card reveal reveal-delay-1">
+                    <div class="highlight-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=700&q=80" alt="Batata frita crocante">
+                        <span class="highlight-tag">Aperitivo</span>
+                    </div>
+                    <div class="highlight-info">
+                        <h3>Espetinhos &amp; Porções</h3>
+                        <p>Churrasquinho, espetinho de carne, frango, queijo coalho e porções bem servidas para compartilhar.</p>
+                        <span class="highlight-price"><i class="fas fa-tag"></i> a partir de R$ 8</span>
+                        <a href="https://wa.me/5585988681757?text=Ol%C3%A1!%20Quero%20pedir%20espetinhos%20e%20por%C3%A7%C3%B5es." target="_blank" class="btn btn-whatsapp btn-block"><i class="fab fa-whatsapp"></i> Pedir agora</a>
+                    </div>
+                </article>
+                <article class="highlight-card reveal reveal-delay-2">
+                    <div class="highlight-img-wrap">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=700&q=80" alt="Costela do Sr. Matuto">
+                        <span class="highlight-tag">Suculento</span>
+                    </div>
+                    <div class="highlight-info">
+                        <h3>Costela &amp; Estrogonofe</h3>
+                        <p>Costela assada no ponto, estrogonofe cremoso com arroz soltinho e batata palha crocante. Irresistível.</p>
+                        <span class="highlight-price"><i class="fas fa-tag"></i> R$ 38–60</span>
+                        <a href="https://wa.me/5585988681757?text=Ol%C3%A1!%20Quero%20pedir%20Costela%20ou%20Estrogonofe." target="_blank" class="btn btn-whatsapp btn-block"><i class="fab fa-whatsapp"></i> Pedir agora</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROMOS -->
+    <section class="section section--alt">
+        <div class="container">
+            <div class="section-title reveal">
+                <span class="eyebrow">Promoções da semana</span>
+                <h2>Combos <em>imperdíveis</em></h2>
+                <p>As promoções que viraram sucesso de vendas no Sr. Matuto.</p>
+            </div>
+            <div class="promos-grid">
+                <article class="promo-card reveal">
+                    <span class="promo-badge">Mais pedida</span>
+                    <h3>Pizza 3 Sabores</h3>
+                    <p>Escolha até 3 sabores da casa + borda + refrigerante de 1 litro. Perfeito para compartilhar.</p>
+                    <div class="promo-price">R$ 40 <small>/ combo</small></div>
+                </article>
+                <article class="promo-card reveal reveal-delay-1">
+                    <span class="promo-badge">Seg a Qui</span>
+                    <h3>Pizza de Calabresa</h3>
+                    <p>Sabor clássico, muuuito recheado, por um preço que cabe no bolso. Válido de segunda a quinta.</p>
+                    <div class="promo-price">R$ 25 <small>/ unidade</small></div>
+                </article>
+                <article class="promo-card reveal reveal-delay-2">
+                    <span class="promo-badge">Ter a Qui</span>
+                    <h3>Rodízio de Pizzas</h3>
+                    <p>De segunda a quinta, rodízio com mais de 47 sabores para você comer à vontade. Ideal para reunir a galera.</p>
+                    <div class="promo-price">Consulte <small>/ por pessoa</small></div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARDÁPIO COMPLETO -->
+    <section class="section" id="cardapio">
+        <div class="container">
+            <div class="section-title reveal">
+                <span class="eyebrow">Cardápio completo</span>
+                <h2>Tudo que você <em>encontra aqui</em></h2>
+                <p>Navegue pelas categorias e escolha seu favorito. Preços sujeitos a alteração.</p>
+            </div>
+
+            <nav class="menu-sticky reveal" id="menu-sticky" aria-label="Categorias do cardápio">
+                <a class="menu-pill active" data-target="cat-pratos">🍽️ Pratos</a>
+                <a class="menu-pill" data-target="cat-pizzas-trad">🍕 Tradicionais</a>
+                <a class="menu-pill" data-target="cat-pizzas-prev">⭐ Premium</a>
+                <a class="menu-pill" data-target="cat-pizzas-doces">🍫 Doces</a>
+                <a class="menu-pill" data-target="cat-calzones">Half-Moon Calzones</a>
+                <a class="menu-pill" data-target="cat-porcoes">🍟 Porções</a>
+                <a class="menu-pill" data-target="cat-bebidas">🥤 Bebidas</a>
+            </nav>
+
+            <!-- Pratos regionais -->
+            <div class="menu-category" id="cat-pratos">
+                <div class="category-header">
+                    <div class="cat-icon">🍽️</div>
+                    <div>
+                        <h3>Pratos Regionais</h3>
+                        <div class="cat-desc">O coração do Nordeste na sua mesa</div>
+                    </div>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item"><div class="menu-item-details"><h4>Feijão Tropeiro</h4><p>Feijão, farinha, linguiça, bacon, cebola e temperos da casa.</p></div><div class="menu-item-price"><span class="from">a partir de</span>R$ 27</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Feijão Verde da Casa</h4><p>Cremoso, com arroz, carne do sol/baião e farofa.</p></div><div class="menu-item-price"><span class="from">unidade</span>R$ 27</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Baião de Dois</h4><p>Arroz com feijão verde, queijo coalho e carne do sol.</p></div><div class="menu-item-price"><span class="from">a partir de</span>R$ 32</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Arroz Pai d'Égua</h4><p>Arroz cremoso com carnes, linguicinha e temperos regionais.</p></div><div class="menu-item-price"><span class="from">a partir de</span>R$ 35</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Carne do Sol Acebolada</h4><p>Macia, suculenta, com cebola roxa e baião.</p></div><div class="menu-item-price"><span class="from">a partir de</span>R$ 38</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Costela Assada</h4><p>Costela bovina suculenta, no ponto, com mandioca.</p></div><div class="menu-item-price"><span class="from">a partir de</span>R$ 45</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Bife Grelhado</h4><p>Bife acebolado com arroz branco e batata frita.</p></div><div class="menu-item-price"><span class="from">a partir de</span>R$ 34</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Estrogonofe Cremoso</h4><p>Com arroz branco soltinho e batata palha crocante.</p></div><div class="menu-item-price"><span class="from">a partir de</span>R$ 36</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Frango Grelhado</h4><p>Peito de frango suculento com arroz e legumes.</p></div><div class="menu-item-price"><span class="from">a partir de</span>R$ 30</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Camarão ao Alho e Óleo</h4><p>Camarões selecionados salteados no alho.</p></div><div class="menu-item-price"><span class="from">porção</span>R$ 49</div></div>
+                </div>
+            </div>
+
+            <!-- Pizzas tradicionais -->
+            <div class="menu-category" id="cat-pizzas-trad">
+                <div class="category-header">
+                    <div class="cat-icon">🍕</div>
+                    <div>
+                        <h3>Pizzas Tradicionais</h3>
+                        <div class="cat-desc">Linha clássica, muito recheada</div>
+                    </div>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item"><div class="menu-item-details"><h4>Mussarela</h4><p>Molho de tomate, mussarela e orégano.</p></div><div class="menu-item-price"><span class="from">M/G/GG</span>R$ 35/45/55</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Calabresa</h4><p>Calabresa fatiada, mussarela e cebola.</p></div><div class="menu-item-price"><span class="from">M/G/GG</span>R$ 35/45/55</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Portuguesa</h4><p>Presunto, ovos, cebola, ervilha e mussarela.</p></div><div class="menu-item-price"><span class="from">M/G/GG</span>R$ 40/50/60</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Frango com Catupiry</h4><p>Frango desfiado cremoso com catupiry.</p></div><div class="menu-item-price"><span class="from">M/G/GG</span>R$ 42/52/62</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Quatro Queijos</h4><p>Mussarela, provolone, parmesão e catupiry.</p></div><div class="menu-item-price"><span class="from">M/G/GG</span>R$ 45/55/65</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Napolitana</h4><p>Mussarela, tomate fresco, parmesão e orégano.</p></div><div class="menu-item-price"><span class="from">M/G/GG</span>R$ 38/48/58</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Toscana</h4><p>Linguiça toscana, mussarela e cebola.</p></div><div class="menu-item-price"><span class="from">M/G/GG</span>R$ 40/50/60</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Vegetariana</h4><p>Legumes selecionados e mussarela.</p></div><div class="menu-item-price"><span class="from">M/G/GG</span>R$ 40/50/60</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Atum</h4><p>Atum sólido, cebola e mussarela.</p></div><div class="menu-item-price"><span class="from">M/G/GG</span>R$ 45/55/65</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Margherita</h4><p>Mussarela de búfala, tomate e manjericão.</p></div><div class="menu-item-price"><span class="from">M/G/GG</span>R$ 42/52/62</div></div>
+                </div>
+            </div>
+
+            <!-- Pizzas premium -->
+            <div class="menu-category" id="cat-pizzas-prev">
+                <div class="category-header">
+                    <div class="cat-icon">⭐</div>
+                    <div>
+                        <h3>Pizzas Premium &amp; Sr. Matuto</h3>
+                        <div class="cat-desc">Exclusividades da casa</div>
+                    </div>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item"><div class="menu-item-details"><h4>Pizza Sr. Matuto</h4><p>Receita exclusiva da casa com ingredientes selecionados.</p></div><div class="menu-item-price"><span class="from">GG</span>R$ 65</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Pizza Nordestina</h4><p>Carne do sol, queijo coalho e cebola roxa.</p></div><div class="menu-item-price"><span class="from">GG</span>R$ 69</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Pizza de Camarão</h4><p>Camarão ao alho e óleo com catupiry.</p></div><div class="menu-item-price"><span class="from">GG</span>R$ 75</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Pizza de Calabresa Premium</h4><p>Calabresa artesanal + catupiry + bacon.</p></div><div class="menu-item-price"><span class="from">GG</span>R$ 62</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Filé com Fritas</h4><p>Filé mignon, batata palha e molho especial.</p></div><div class="menu-item-price"><span class="from">GG</span>R$ 68</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Cheddar &amp; Bacon</h4><p>Mussarela, cheddar cremoso e bacon crocante.</p></div><div class="menu-item-price"><span class="from">GG</span>R$ 59</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Pizza da Serra</h4><p>Catupiry, frango, milho e batata palha.</p></div><div class="menu-item-price"><span class="from">GG</span>R$ 64</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Costela na Pizza</h4><p>Costela desfiada com cebola caramelizada.</p></div><div class="menu-item-price"><span class="from">GG</span>R$ 72</div></div>
+                </div>
+            </div>
+
+            <!-- Pizzas doces -->
+            <div class="menu-category" id="cat-pizzas-doces">
+                <div class="category-header">
+                    <div class="cat-icon">🍫</div>
+                    <div>
+                        <h3>Pizzas Doces</h3>
+                        <div class="cat-desc">Para fechar com chave de ouro</div>
+                    </div>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item"><div class="menu-item-details"><h4>Chocolate</h4><p>Chocolate ao leite derretido com granulado.</p></div><div class="menu-item-price"><span class="from">GG</span>R$ 48</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Prestígio</h4><p>Chocolate e coco ralado.</p></div><div class="menu-item-price"><span class="from">GG</span>R$ 48</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Romeu e Julieta</h4><p>Goiabada cremosa e queijo.</p></div><div class="menu-item-price"><span class="from">GG</span>R$ 45</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Banana com Canela</h4><p>Banana, canela e leite condensado.</p></div><div class="menu-item-price"><span class="from">GG</span>R$ 46</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Nutella &amp; Morango</h4><p>Nutella com morangos frescos.</p></div><div class="menu-item-price"><span class="from">GG</span>R$ 55</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Doce de Leite</h4><p>Doce de leite cremoso com coco.</p></div><div class="menu-item-price"><span class="from">GG</span>R$ 45</div></div>
+                </div>
+            </div>
+
+            <!-- Calzones -->
+            <div class="menu-category" id="cat-calzones">
+                <div class="category-header">
+                    <div class="cat-icon">  
+                    <div>
+                        <h3>Calzones</h3>
+                        <div class="cat-desc">Recheados na medida certa</div>
+                    </div>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item"><div class="menu-item-details"><h4>Calzone de Carne do Sol</h4><p>Carne do sol, cebola e queijo.</p></div><div class="menu-item-price"><span class="from">unidade</span>R$ 32</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Calzone de Frango</h4><p>Frango cremoso com catupiry.</p></div><div class="menu-item-price"><span class="from">unidade</span>R$ 30</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Calzone Quatro Queijos</h4><p>Mix de queijos derretidos.</p></div><div class="menu-item-price"><span class="from">unidade</span>R$ 30</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Calzone de Calabresa</h4><p>Calabresa, cebola e mussarela.</p></div><div class="menu-item-price"><span class="from">unidade</span>R$ 28</div></div>
+                </div>
+            </div>
+
+            <!-- Porções -->
+            <div class="menu-category" id="cat-porcoes">
+                <div class="category-header">
+                    <div class="cat-icon">🍟</div>
+                    <div>
+                        <h3>Porções &amp; Aperitivos</h3>
+                        <div class="cat-desc">Para petiscar com a galera</div>
+                    </div>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item"><div class="menu-item-details"><h4>Batata Frita</h4><p>Crocante por fora, macia por dentro. Tamanho família.</p></div><div class="menu-item-price"><span class="from">porção</span>R$ 22</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Calabresa Acebolada</h4><p>Calabresa frita fatiada com cebola.</p></div><div class="menu-item-price"><span class="from">porção</span>R$ 28</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Queijo Coalho</h4><p>Espetinho de queijo coalho grelhado.</p></div><div class="menu-item-price"><span class="from">unidade</span>R$ 9</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Espetinho de Carne</h4><p>Carne macia grelhada no ponto.</p></div><div class="menu-item-price"><span class="from">unidade</span>R$ 10</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Espetinho de Frango</h4><p>Frango marinado grelhado.</p></div><div class="menu-item-price"><span class="from">unidade</span>R$ 9</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Tábua de Frios</h4><p>Queijos e embutidos selecionados.</p></div><div class="menu-item-price"><span class="from">porção</span>R$ 49</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Onion Rings</h4><p>Anéis de cebola empanados crocantes.</p></div><div class="menu-item-price"><span class="from">porção</span>R$ 24</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Coxinha da Casa</h4><p>Coxinha de frango cremoso (6 unid).</p></div><div class="menu-item-price"><span class="from">6 unid</span>R$ 24</div></div>
+                </div>
+            </div>
+
+            <!-- Bebidas -->
+            <div class="menu-category" id="cat-bebidas">
+                <div class="category-header">
+                    <div class="cat-icon">🥤</div>
+                    <div>
+                        <h3>Bebidas</h3>
+                        <div class="cat-desc">Para acompanhar</div>
+                    </div>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item"><div class="menu-item-details"><h4>Refrigerante Lata</h4><p>Coca, Pepsi, Guaraná, Fanta.</p></div><div class="menu-item-price"><span class="from">350ml</span>R$ 6</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Refrigerante 1L/1,5L</h4><p>Para a mesa toda.</p></div><div class="menu-item-price"><span class="from">garrafa</span>R$ 10/14</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Suco Natural</h4><p>Laranja, abacaxi, maracujá, melancia.</p></div><div class="menu-item-price"><span class="from">500ml</span>R$ 10</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Cerveja Long Neck</h4><p>Heineken, Budweiser, Corona.</p></div><div class="menu-item-price"><span class="from">330ml</span>R$ 11</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Cerveja 600ml</h4><p>Itaipava, Brahma, Skol — trincando.</p></div><div class="menu-item-price"><span class="from">600ml</span>R$ 14</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Coquetéis</h4><p>Caipirinha, mojito, gin tônica da casa.</p></div><div class="menu-item-price"><span class="from">a partir de</span>R$ 24</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Água mineral</h4><p>Sem/Com gás.</p></div><div class="menu-item-price"><span class="from">500ml</span>R$ 4</div></div>
+                    <div class="menu-item"><div class="menu-item-details"><h4>Água de coco</h4><p>Gelada, na casca.</p></div><div class="menu-item-price"><span class="from">500ml</span>R$ 6</div></div>
+                </div>
+            </div>
+
+            <div class="menu-cta-box reveal">
+                <h3>Quer o cardápio completo e atualizado?</h3>
+                <p>Fale com a gente no WhatsApp e enviamos o cardápio digital com fotos e disponibilidade.</p>
+                <a href="https://wa.me/5585988681757?text=Ol%C3%A1!%20Gostaria%20de%20receber%20o%20card%C3%A1pio%20digital%20completo%20do%20Sr.%20Matuto." target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Receber cardápio digital</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section class="section section--alt" id="galeria">
+        <div class="container">
+            <div class="section-title reveal">
+                <span class="eyebrow">Nosso ambiente</span>
+                <h2>Galeria <em>Sr. Matuto</em></h2>
+                <p>Ambiente acolhedor, pratos caprichados e momentos que ficam na memória.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item tall reveal"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" alt="Interior do Sr. Matuto"><span class="cap">Ambiente</span></div>
+                <div class="gallery-item reveal reveal-delay-1"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80" alt="Pizza"><span class="cap">Pizza</span></div>
+                <div class="gallery-item reveal reveal-delay-2"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=80" alt="Feijão tropeiro"><span class="cap">Feijão Tropeiro</span></div>
+                <div class="gallery-item wide reveal reveal-delay-3"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80" alt="Carne do sol"><span class="cap">Carne do Sol</span></div>
+                <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=800&q=80" alt="Porção de batata"><span class="cap">Porções</span></div>
+                <div class="gallery-item tall reveal reveal-delay-1"><img src="https://images.unsplash.com/photo-1592861956120-e524fc739696?auto=format&fit=crop&w=800&q=80" alt="Pizza close"><span class="cap">Massa Fininha</span></div>
+                <div class="gallery-item reveal reveal-delay-2"><img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=800&q=80" alt="Camarão"><span class="cap">Camarão</span></div>
+                <div class="gallery-item reveal reveal-delay-3"><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=800&q=80" alt="Bebidas"><span class="cap">Bebidas</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AVALIAÇÕES -->
+    <section class="section" id="avaliacoes">
+        <div class="container">
+            <div class="section-title reveal">
+                <span class="eyebrow">O que dizem</span>
+                <h2>Avaliações <em>reais</em></h2>
+                <p>A confiança de quem já provou. Veja o que nossos clientes contam.</p>
+            </div>
+            <div class="reviews-top reveal">
+                <div class="score-block">
+                    <div class="score-num">4.4</div>
+                    <div class="score-stars">★★★★☆</div>
+                    <div class="score-count">583 avaliações no Google</div>
+                </div>
+                <div class="reviews-bars">
+                    <div class="bar-row"><span>5★</span><div class="bar"><span style="width:72%"></span></div><span>72%</span></div>
+                    <div class="bar-row"><span>4★</span><div class="bar"><span style="width:16%"></span></div><span>16%</span></div>
+                    <div class="bar-row"><span>3★</span><div class="bar"><span style="width:7%"></span></div><span>7%</span></div>
+                    <div class="bar-row"><span>2★</span><div class="bar"><span style="width:3%"></span></div><span>3%</span></div>
+                    <div class="bar-row"><span>1★</span><div class="bar"><span style="width:2%"></span></div><span>2%</span></div>
+                </div>
+            </div>
+            <div class="reviews-grid">
+                <article class="review-card reveal">
+                    <div class="review-head">
+                        <div class="avatar">SV</div>
+                        <div>
+                            <strong>Silvia Viana</strong>
+                            <span>Local Guide · 7 meses atrás</span>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">O restaurante é bonito e arejado, banheiros limpos, comida boa e bom preço. Ambiente agradável e bem cuidado.</p>
+                </article>
+                <article class="review-card reveal reveal-delay-1">
+                    <div class="review-head">
+                        <div class="avatar">RJ</div>
+                        <div>
+                            <strong>Roberto de Jesus</strong>
+                            <span>Local Guide · 7 meses atrás</span>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★☆</div>
+                    <p class="review-text">Comida boa, preço justo! A variedade do cardápio e o feijão tropeiro são destaque.</p>
+                </article>
+                <article class="review-card reveal reveal-delay-2">
+                    <div class="review-head">
+                        <div class="avatar">AA</div>
+                        <div>
+                            <strong>Ângela Araújo</strong>
+                            <span>Local Guide · 6 meses atrás</span>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">A comida, as pizzas... a massa afinou bastante, mas o benefício é que vem muuuuto recheio e é muito gostoso, de boa qualidade.</p>
+                </article>
+                <article class="review-card reveal">
+                    <div class="review-head">
+                        <div class="avatar">MC</div>
+                        <div>
+                            <strong>Meridiane C. V.</strong>
+                            <span>1 mês atrás</span>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">Excelente ambiente, garçons educados e com pró-atividade, zero reclamações. Ganhamos um cliente com toda certeza.</p>
+                </article>
+                <article class="review-card reveal reveal-delay-1">
+                    <div class="review-head">
+                        <div class="avatar">GU</div>
+                        <div>
+                            <strong>Guia Caucaia</strong>
+                            <span>Instagram</span>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">Sr. Matuto Pizzaria é aquele tipo de lugar que entra fácil na lista de "preciso conhecer". Ambiente aconchegante, pizzas bem recheadas.</p>
+                </article>
+                <article class="review-card reveal reveal-delay-2">
+                    <div class="review-head">
+                        <div class="avatar">CL</div>
+                        <div>
+                            <strong>Cliente fiel</strong>
+                            <span>Google</span>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★☆</div>
+                    <p class="review-text">Rodízio de segunda a quinta é imbatível. Mais de 47 sabores e atendimento atento. Recomendo para reunir a família.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESERVA / CONTATO -->
+    <section class="section reserve" id="reserva">
+        <div class="container">
+            <div class="reserve-grid">
+                <div class="reserve-info reveal">
+                    <span class="eyebrow" style="color:var(--gold);display:inline-flex;align-items:center;gap:12px;text-transform:uppercase;font-size:0.78rem;letter-spacing:3px;margin-bottom:18px;">Reserve sua mesa</span>
+                    <h2>Venha viver essa <em>experiência</em></h2>
+                    <p>Planejando um jantar, um aniversário ou um encontro com a galera? Envie seus dados e a gente confirma sua reserva pelo WhatsApp.</p>
+                    <ul style="color:var(--muted);font-size:0.92rem;display:flex;flex-direction:column;gap:8px;">
+                        <li><i class="fas fa-check" style="color:var(--gold);margin-right:8px;"></i> Atendimento de terça a domingo</li>
+                        <li><i class="fas fa-check" style="color:var(--gold);margin-right:8px;"></i> Grupos e eventos mediante reserva</li>
+                        <li><i class="fas fa-check" style="color:var(--gold);margin-right:8px;"></i> Pizza 3 sabores + borda + refri por R$ 40</li>
+                        <li><i class="fas fa-check" style="color:var(--gold);margin-right:8px;"></i> Wi-Fi e estacionamento</li>
+                    </ul>
+                </div>
+                <form class="reserve-form reveal reveal-delay-1" id="reserve-form" onsubmit="return false;">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="r-nome">Nome</label>
+                            <input type="text" id="r-nome" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="r-pessoas">Pessoas</label>
+                            <select id="r-pessoas">
+                                <option>2 pessoas</option>
+                                <option>3-4 pessoas</option>
+                                <option>5-8 pessoas</option>
+                                <option>10+ pessoas</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="r-data">Data</label>
+                            <input type="date" id="r-data" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="r-hora">Horário</label>
+                            <input type="time" id="r-hora" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="r-obs">Observações</label>
+                        <textarea id="r-obs" placeholder="Aniversário, preferência de área, etc."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-whatsapp btn-block" id="r-submit">
+                        <i class="fab fa-whatsapp"></i> Enviar reserva pelo WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- LOCALIZAÇÃO -->
+    <section class="section" id="localizacao">
+        <div class="container">
+            <div class="location-grid">
+                <div class="location-info reveal">
+                    <span style="color:var(--gold);display:inline-flex;align-items:center;gap:12px;text-transform:uppercase;font-size:0.78rem;letter-spacing:3px;margin-bottom:18px;font-weight:600;">Onde estamos</span>
+                    <h2>Venha nos <em>visitar</em></h2>
+                    <p>Estamos em Nova Metrópole, Caucaia - CE. Ambiente acolhedor, com mesas internas e externas para você curtir.</p>
+                    <div class="info-list">
+                        <div class="info-item">
+                            <div class="ic"><i class="fas fa-map-marker-alt"></i></div>
+                            <div>
+                                <strong>Endereço</strong>
+                                <span>R. 107, 47A - Nova Metrópole, Caucaia - CE, 61658-030</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="ic"><i class="fab fa-whatsapp"></i></div>
+                            <div>
+                                <strong>WhatsApp / Telefone</strong>
+                                <a href="https://wa.me/5585988681757" target="_blank">(85) 98868-1757</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="ic"><i class="fas fa-clock"></i></div>
+                            <div>
+                                <strong>Horário de funcionamento</strong>
+                                <div class="hours-grid">
+                                    <span class="day">Segunda a Sexta</span><span class="time">17:00 – 00:00</span>
+                                    <span class="day">Sábado e Domingo</span><span class="time">11:00 – 00:00</span>
+                                    <span class="day">Segunda</span><span class="time closed">(consulte)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="ic"><i class="fab fa-instagram"></i></div>
+                            <div>
+                                <strong>Instagram</strong>
+                                <a href="https://www.instagram.com/sr.matuto_restaurante/" target="_blank">@sr.matuto_restaurante</a>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <div class="ic"><i class="fas fa-store"></i></div>
+                            <div>
+                                <strong>Serviços</strong>
+                                <span>Refeição no local · Para viagem · Entrega sem contato · Retirada</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display:flex;gap:14px;flex-wrap:wrap;">
+                        <a href="https://wa.me/5585988681757?text=Ol%C3%A1!%20Quero%20fazer%20um%20pedido." target="_blank" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> Chamar no WhatsApp</a>
+                        <a href="https://maps.google.com/?q=R.+107,+47A+Nova+Metropole+Caucaia+CE" target="_blank" class="btn btn-ghost"><i class="fas fa-directions"></i> Como chegar</a>
+                    </div>
+                </div>
+                <div class="map-container reveal reveal-delay-1">
+                    <div class="map-badge"><i class="fas fa-map-marker-alt"></i> Nova Metrópole · Caucaia/CE</div>
+                    <iframe
+                        src="https://www.google.com/maps?q=-3.7637775,-38.6527615&hl=pt-BR&z=16&output=embed"
+                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo-foot">Sr. <span>Matuto</span></div>
+                    <p>O Melhor da Culinária Regional. Experiência, Sabor e Tradição em Nova Metrópole, Caucaia - CE.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/sr.matuto_restaurante/" target="_blank" class="social-btn" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/5585988681757" target="_blank" class="social-btn" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/" target="_blank" class="social-btn" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://maps.google.com/?q=R.+107,+47A+Nova+Metropole+Caucaia+CE" target="_blank" class="social-btn" title="Localização"><i class="fas fa-map-marker-alt"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Navegação</h4>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#destaques">Destaques</a></li>
+                        <li><a href="#cardapio">Cardápio</a></li>
+                        <li><a href="#galeria">Galeria</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Cardápio</h4>
+                    <ul>
+                        <li><a href="#cat-pratos">Pratos regionais</a></li>
+                        <li><a href="#cat-pizzas-trad">Pizzas tradicionais</a></li>
+                        <li><a href="#cat-pizzas-prev">Pizzas premium</a></li>
+                        <li><a href="#cat-pizzas-doces">Pizzas doces</a></li>
+                        <li><a href="#cat-porcoes">Porções</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="https://wa.me/5585988681757" target="_blank">(85) 98868-1757</a></li>
+                        <li><a href="https://www.instagram.com/sr.matuto_restaurante/" target="_blank">@sr.matuto_restaurante</a></li>
+                        <li><span style="color:var(--muted);">Seg–Sex 17h–00h</span></li>
+                        <li><span style="color:var(--muted);">Sáb–Dom 11h–00h</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© Sr. Matuto Restaurante — Todos os direitos reservados.</span>
+                <span>R. 107, 47A - Nova Metrópole, Caucaia - CE.</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOAT WHATSAPP -->
+    <a href="https://wa.me/5585988681757?text=Ol%C3%A1!%20Gostaria%20de%20fazer%20um%20pedido." class="whatsapp-float" target="_blank" title="Peça pelo WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script>
+        /* ===== MOBILE MENU ===== */
+        const mobileToggle = document.getElementById('mobile-toggle');
+        const navLinks = document.getElementById('nav-links');
+        mobileToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            const icon = mobileToggle.querySelector('i');
+            if (navLinks.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                const icon = mobileToggle.querySelector('i');
+                if (icon) { icon.classList.remove('fa-times'); icon.classList.add('fa-bars'); }
+            });
+        });
+
+        /* ===== NAVBAR SCROLL ===== */
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 40) navbar.classList.add('scrolled');
+            else navbar.classList.remove('scrolled');
+        }, { passive: true });
+
+        /* ===== REVEAL ON SCROLL ===== */
+        const revealEls = document.querySelectorAll('.reveal');
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('in');
+                    io.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+        revealEls.forEach(el => io.observe(el));
+
+        /* ===== MENU PILLS ===== */
+        const pills = document.querySelectorAll('.menu-pill');
+        const categories = document.querySelectorAll('.menu-category');
+        const scrollToCat = (id) => {
+            const el = document.getElementById(id);
+            if (el) {
+                const y = el.getBoundingClientRect().top + window.scrollY - 130;
+                window.scrollTo({ top: y, behavior: 'smooth' });
+            }
+        };
+        pills.forEach(pill => {
+            pill.addEventListener('click', (e) => {
+                e.preventDefault();
+                pills.forEach(p => p.classList.remove('active'));
+                pill.classList.add('active');
+                scrollToCat(pill.dataset.target);
+            });
+        });
+
+        // highlight pill on scroll
+        const catObserver = new IntersectionObserver((entries) => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    const id = e.target.id;
+                    pills.forEach(p => p.classList.toggle('active', p.dataset.target === id));
+                }
+            });
+        }, { threshold: 0.4, rootMargin: '-120px 0px -50% 0px' });
+        categories.forEach(c => catObserver.observe(c));
+
+        /* ===== RESERVATION FORM -> WHATSAPP ===== */
+        document.getElementById('reserve-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const nome = document.getElementById('r-nome').value.trim();
+            const pessoas = document.getElementById('r-pessoas').value;
+            const data = document.getElementById('r-data').value;
+            const hora = document.getElementById('r-hora').value;
+            const obs = document.getElementById('r-obs').value.trim();
+            if (!nome || !data || !hora) {
+                alert('Preencha nome, data e horário para enviar a reserva.');
+                return;
+            }
+            const msg = `Olá! Gostaria de reservar uma mesa no Sr. Matuto.\n\nNome: ${nome}\nPessoas: ${pessoas}\nData: ${data}\nHorário: ${hora}${obs ? '\nObservações: ' + obs : ''}`;
+            const url = 'https://wa.me/5585988681757?text=' + encodeURIComponent(msg);
+            window.open(url, '_blank');
+        });
+
+        /* ===== PARALLAX HERO (subtle) ===== */
+        const heroVisual = document.querySelector('.hero-visual');
+        window.addEventListener('scroll', () => {
+            if (!heroVisual) return;
+            const y = window.scrollY;
+            heroVisual.style.transform = `translateY(${Math.min(y * 0.08, 40)}px)`;
+        }, { passive: true });
+    </script>
+</body>
+</html>
